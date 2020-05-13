@@ -7,7 +7,7 @@ The project creates a web-server nginx, CGI gunicorn and project on the Python3.
 # Work
 Start on the Linux:
 ```sh
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 Stop on the Linux:
