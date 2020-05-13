@@ -1,0 +1,20 @@
+version: '3'
+volumes:
+  pgdata:
+  static_files:
+services:
+  python:
+    build:
+      context: .
+      dockerfile: dockerfiles/python/Dockerfile
+    environment:
+      - PYTHONUNBUFFERED=1
+    ports:
+      - 8000:8000
+    command: gunicorn -w 4 project.wsgi -b 0.0.0.0:8000
+  nginx:
+    build:
+      context: .
+      dockerfile: dockerfiles/nginx/Dockerfile
+    ports:
+      - 80:80

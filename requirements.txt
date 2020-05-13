@@ -1,3 +1,2 @@
-uwsgi
 django
-supervisor
+gunicorn
