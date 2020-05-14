@@ -26,5 +26,5 @@ $ docker-compose down
 Start and stop on the Windows 10:
 ```sh
 > docker-compose up -d
-$ docker-compose down
+> docker-compose down
 ```
