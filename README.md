@@ -5,6 +5,9 @@ This project was created to pass the PZ on the subject "Organization of data in 
 The project creates a web-server nginx, CGI gunicorn and project on the Python3.
 
 # Work
+
+**Warming! Start Hardware virtualization and see that port 80 and 8000 is free**
+
 Install docker on terminal Linux (Debian):
 ```sh
 $ sudo apt install docker
